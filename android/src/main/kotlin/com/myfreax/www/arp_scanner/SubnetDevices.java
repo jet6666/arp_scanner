@@ -200,7 +200,7 @@ public class SubnetDevices {
                     // Add the device MAC address if it is in the cache
                     if (ipMacHashMap.containsKey(ia.getHostAddress())) {
                         device.mac = ipMacHashMap.get(ia.getHostAddress());
-                        device.vendor = getVendor(device.mac);
+                        //device.vendor = getVendor(device.mac);
                     }
 
                     device.time = pingResult.timeTaken;
